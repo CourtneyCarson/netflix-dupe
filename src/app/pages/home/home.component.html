@@ -1,6 +1,6 @@
 <!-- banner start -->
 <div class="contain-fluid">
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div id="carouselDark" class="carousel carousel-dark slide">
     <div class="carousel-inner">
       <div
         class="carousel-item active"
@@ -23,7 +23,7 @@
     <button
       class="carousel-control-prev"
       type="button"
-      data-bs-target="#carouselExampleDark"
+      data-bs-target="#carouselDark"
       data-bs-slide="prev"
     >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -32,7 +32,7 @@
     <button
       class="carousel-control-next"
       type="button"
-      data-bs-target="#carouselExampleDark"
+      data-bs-target="#carouselDark"
       data-bs-slide="next"
     >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -47,26 +47,34 @@
   <div class="row">
     <h5 class="text-white">Trending Movies</h5>
     <div class="rowposter mt-3 p-2">
-      <ng-container *ngFor="let item of trendingMovieResult">
-        <img
+      <!-- <ng-container *ngFor="let item of trendingMovieResult"> -->
+        <!-- <img
           src="https://image.tmdb.org/t/p/original/{{ item.poster_path }}"
           class="rowimg largeposter"
           alt="..."
           routerLink="/movie/{{ item.id }}"
-        />
-      </ng-container>
+        /> -->
+        <genre-poster [genres]="trendingMovieResult"></genre-poster>
+
+      <!-- </ng-container> -->
     </div>
   </div>
+
+  <!-- <div class="contain mt-3 p-4"> -->
+  <!-- trending movies -->
+  <!-- <div class="row"> -->
+    <h5 class="text-white">Romance Movies</h5>
+    <div class="rowposter mt-3 p-2">
+      <genre-poster [genres]="movieGenres.romanceMovieResult"></genre-poster>
+    </div>
+  <!-- </div> -->
 </div>
-
-
-<genre-poster (genres)="movieGenres.trendingMovieResult" ></genre-poster>
+<!-- </div> -->
 
 <!-- could break into reusable component with inputs for each type? but how would it loop through 
 could use a bunch of inputs and ngIf to show each one? 
 could use a switch statement to show each one? 
 don't want a switch because they all need to show at the same time 
 -->
-
 
 <!-- pass in whichever item you need to the child for the loop through  -->

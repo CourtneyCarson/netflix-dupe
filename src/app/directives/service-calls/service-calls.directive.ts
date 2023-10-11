@@ -17,14 +17,14 @@ export class ServiceCallsDirective extends MovieGenreDirective {
   }
   bannerData() {
     this.movieService.bannerApiData().subscribe((data) => {
-      console.log('movie data :D', data);
+      // console.log('movie data :D', data);
       this.bannerResult = data.results;
     });
   }
 
   trendingMovies() {
     this.movieService.trendingMovies().subscribe((data) => {
-      console.log('trending movie data :D', data);
+      // console.log('trending movie data :D', data);
       this.trendingMovieResult = data.results;
     });
   }

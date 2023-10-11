@@ -1,14 +1,7 @@
-
-hellohs
-
-<div class="contain mt-3 p-4">
+<!-- <div class="contain mt-3 p-4"> -->
   <!-- trending movies -->
-  <ng-container *ngFor="let item of genres">
-
- <pre [innerHTML]='item | json'></pre>
-
+  <!-- <ng-container *ngFor="let item of genres">
     <div class="row">
-      <h5 class="text-white">{{item.name}}</h5>
       <div class="rowposter mt-3 p-2">
         <img
           src="https://image.tmdb.org/t/p/original/{{ item.poster_path }}"
@@ -19,4 +12,19 @@ hellohs
       </div>
     </div>
   </ng-container>
+</div> -->
+
+<!-- <pre [innerHTML]="genres | json"></pre> -->
+<div class="row">
+  <!-- <h5 class="text-white">Trending Movies</h5> -->
+  <div class="rowposter mt-3 p-2">
+    <ng-container *ngFor="let item of genres">
+      <img
+        src="https://image.tmdb.org/t/p/original/{{ item.poster_path }}"
+        class="rowimg largeposter"
+        alt="..."
+        routerLink="/movie/{{ item.id }}"
+      />
+    </ng-container>
+  </div>
 </div>

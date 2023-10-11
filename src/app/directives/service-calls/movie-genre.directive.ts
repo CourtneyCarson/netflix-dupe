@@ -1,4 +1,4 @@
-import { Directive } from '@angular/core';
+import { Directive, Input } from '@angular/core';
 import {
   MovieGenres,
   TvGenres,
@@ -25,15 +25,15 @@ export class MovieGenreDirective {
   // action movies
   actionMovies() {
     this.genreService.getActionMovies().subscribe((data) => {
-      console.log('action movie data :D', data);
-      this.movieGenres.actionMovieResult = data.results;
+      // console.log('action movie data :D', data);
+      this.movieGenres.actionMovieResult = data.results
     });
   }
 
   // animation movies
   animationMovies() {
     this.genreService.getAnimationMovies().subscribe((data) => {
-      console.log('animation movie data :D', data);
+      // console.log('animation movie data :D', data);
       this.movieGenres.animationMovieResult = data.results;
     });
   }
@@ -41,7 +41,7 @@ export class MovieGenreDirective {
   // bollywood movies
   bollywoodMovies() {
     this.genreService.getBollywoodMovies().subscribe((data) => {
-      console.log('bollywood movie data :D', data);
+      // console.log('bollywood movie data :D', data);
       this.movieGenres.bollywoodMovieResult = data.results;
     });
   }
@@ -49,7 +49,7 @@ export class MovieGenreDirective {
   // comedy movies
   comedyMovies() {
     this.genreService.getComedyMovies().subscribe((data) => {
-      console.log('comedy movie data :D', data);
+      // console.log('comedy movie data :D', data);
       this.movieGenres.comedyMovieResult = data.results;
     });
   }
@@ -57,7 +57,7 @@ export class MovieGenreDirective {
   // drama movies
   dramaMovies() {
     this.genreService.getDramaMovies().subscribe((data) => {
-      console.log('drama movie data :D', data);
+      // console.log('drama movie data :D', data);
       this.movieGenres.dramaMovieResult = data.results;
     });
   }
@@ -65,7 +65,7 @@ export class MovieGenreDirective {
   // documentary movies
   documentaryMovies() {
     this.genreService.getDocumentaryMovies().subscribe((data) => {
-      console.log('documentary movie data :D', data);
+      // console.log('documentary movie data :D', data);
       this.movieGenres.documentaryMovieResult = data.results;
     });
   }
@@ -73,7 +73,7 @@ export class MovieGenreDirective {
   // fantasy movies
   fantasyMovies() {
     this.genreService.getFantasyMovies().subscribe((data) => {
-      console.log('fantasy movie data :D', data);
+      // console.log('fantasy movie data :D', data);
       this.movieGenres.fantasyMovieResult = data.results;
     });
   }
@@ -81,7 +81,7 @@ export class MovieGenreDirective {
   // horror movies
   horrorMovies() {
     this.genreService.getHorrorMovies().subscribe((data) => {
-      console.log('horror movie data :D', data);
+      // console.log('horror movie data :D', data);
       this.movieGenres.fantasyMovieResult = data.results;
     });
   }
@@ -89,7 +89,7 @@ export class MovieGenreDirective {
   // international movies
   internationalMovies() {
     this.genreService.getInternationalMovies().subscribe((data) => {
-      console.log('international movie data :D', data);
+      // console.log('international movie data :D', data);
       this.movieGenres.internationalMovieResult = data.results;
     });
   }
@@ -97,7 +97,7 @@ export class MovieGenreDirective {
   // mystry movies
   mysteryMovies() {
     this.genreService.getMysteryMovies().subscribe((data) => {
-      console.log('mystry movie data :D', data);
+      // console.log('mystry movie data :D', data);
       this.movieGenres.mystryMovieResult = data.results;
     });
   }
@@ -113,7 +113,7 @@ export class MovieGenreDirective {
   // scifi movies
   scifiMovies() {
     this.genreService.getScienceFictionMovies().subscribe((data) => {
-      console.log('scifi movie data :D', data);
+      // console.log('scifi movie data :D', data);
       this.movieGenres.scifiMovieResult = data.results;
     });
   }
@@ -121,7 +121,7 @@ export class MovieGenreDirective {
   // thriller movies
   thrillerMovies() {
     this.genreService.getThrillerMovies().subscribe((data) => {
-      console.log('thriller movie data :D', data);
+      // console.log('thriller movie data :D', data);
       this.movieGenres.thrillerMovieResult = data.results;
     });
   }
@@ -129,7 +129,7 @@ export class MovieGenreDirective {
   // teen drama movies
   teenDramaMovies() {
     this.genreService.getTeenDramaMovies().subscribe((data) => {
-      console.log('teen drama movie data :D', data);
+      // console.log('teen drama movie data :D', data);
       this.movieGenres.teenDramaMovieResult = data.results;
     });
   }
