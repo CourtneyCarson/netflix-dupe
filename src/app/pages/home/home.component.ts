@@ -19,6 +19,9 @@ export class HomeComponent extends ServiceCallsDirective implements OnInit {
   ngOnInit(): void {
     this.bannerData();
     this.trendingMovies();
+    this.trendingTv();
+
+    // movie genres
     this.actionMovies();
     this.animationMovies();
     this.bollywoodMovies();
@@ -33,5 +36,8 @@ export class HomeComponent extends ServiceCallsDirective implements OnInit {
     this.scifiMovies();
     this.thrillerMovies();
     this.teenDramaMovies();
+
+    // tv genres
+    
   }
 }

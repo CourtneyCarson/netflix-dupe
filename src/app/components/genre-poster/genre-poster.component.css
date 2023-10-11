@@ -1,4 +1,3 @@
-
 .rowposter {
   display: flex;
   overflow-y: hidden;
@@ -16,7 +15,7 @@
 
 .rowimg:hover {
   transform: scale(1.09);
-  cursor: pointer;
+  cursor: grabbing;
 }
 
 .largeposter {

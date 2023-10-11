@@ -44,37 +44,51 @@
 
 <div class="contain mt-3 p-4">
   <!-- trending movies -->
-  <div class="row">
-    <h5 class="text-white">Trending Movies</h5>
-    <div class="rowposter mt-3 p-2">
-      <!-- <ng-container *ngFor="let item of trendingMovieResult"> -->
-        <!-- <img
-          src="https://image.tmdb.org/t/p/original/{{ item.poster_path }}"
-          class="rowimg largeposter"
-          alt="..."
-          routerLink="/movie/{{ item.id }}"
-        /> -->
-        <genre-poster [genres]="trendingMovieResult"></genre-poster>
-
-      <!-- </ng-container> -->
-    </div>
-  </div>
-
-  <!-- <div class="contain mt-3 p-4"> -->
-  <!-- trending movies -->
-  <!-- <div class="row"> -->
-    <h5 class="text-white">Romance Movies</h5>
-    <div class="rowposter mt-3 p-2">
-      <genre-poster [genres]="movieGenres.romanceMovieResult"></genre-poster>
-    </div>
-  <!-- </div> -->
+  <h5 class="text-white">Trending Movies</h5>
+  <genre-poster [genres]="trendingMovieResult"></genre-poster>
+  <!-- trending tv -->
+  <h5 class="text-white">Trending TV</h5>
+  <genre-poster [genres]="trendingTvResult"></genre-poster>
+  <!-- romance -->
+  <h5 class="text-white">Romance Movies</h5>
+  <genre-poster [genres]="movieGenres.romanceMovieResult"></genre-poster>
+  <!-- action -->
+  <h5 class="text-white">Action Movies</h5>
+  <genre-poster [genres]="movieGenres.actionMovieResult"></genre-poster>
+  <!-- comedy -->
+  <h5 class="text-white">Comedy Movies</h5>
+  <genre-poster [genres]="movieGenres.comedyMovieResult"></genre-poster>
+  <!-- horror -->
+  <h5 class="text-white">Horror Movies</h5>
+  <genre-poster [genres]="movieGenres.horrorMovieResult"></genre-poster>
+  <!-- drama -->
+  <h5 class="text-white">Drama Movies</h5>
+  <genre-poster [genres]="movieGenres.dramaMovieResult"></genre-poster>
+  <!-- thriller -->
+  <h5 class="text-white">Thriller Movies</h5>
+  <genre-poster [genres]="movieGenres.thrillerMovieResult"></genre-poster>
+  <!-- documentary -->
+  <h5 class="text-white">Documentary Movies</h5>
+  <genre-poster [genres]="movieGenres.documentaryMovieResult"></genre-poster>
+  <!-- animation -->
+  <h5 class="text-white">Animation Movies</h5>
+  <genre-poster [genres]="movieGenres.animationMovieResult"></genre-poster>
+  <!-- fantasy -->
+  <h5 class="text-white">Fantasy Movies</h5>
+  <genre-poster [genres]="movieGenres.fantasyMovieResult"></genre-poster>
+  <!-- international -->
+  <h5 class="text-white">International Movies</h5>
+  <genre-poster [genres]="movieGenres.internationalMovieResult"></genre-poster>
+  <!-- bollywood -->
+  <h5 class="text-white">bollywood Movies</h5>
+  <genre-poster [genres]="movieGenres.bollywoodMovieResult"></genre-poster>
+  <!-- scifi -->
+  <h5 class="text-white">Sci-Fi Movies</h5>
+  <genre-poster [genres]="movieGenres.scifiMovieResult"></genre-poster>
+  <!-- mystery -->
+  <h5 class="text-white">Mystery Movies</h5>
+  <genre-poster [genres]="movieGenres.mystryMovieResult"></genre-poster>
+  <!-- teen drama -->
+  <h5 class="text-white">Teen Drama Movies</h5>
+  <genre-poster [genres]="movieGenres.teenDramaMovieResult"></genre-poster>
 </div>
-<!-- </div> -->
-
-<!-- could break into reusable component with inputs for each type? but how would it loop through 
-could use a bunch of inputs and ngIf to show each one? 
-could use a switch statement to show each one? 
-don't want a switch because they all need to show at the same time 
--->
-
-<!-- pass in whichever item you need to the child for the loop through  -->

@@ -21,6 +21,12 @@ export class MovieApiServiceService {
     );
   }
 
+  trendingTv(): Observable<any> {
+    return this.http.get(
+      ` ${enviornment.BASE_URL}/trending/tv/day?api_key=${enviornment.API_KEY}&language=en-US`
+    );
+  }
+
   // search
   searchMovie(data: any): Observable<any> {
     console.log(data);

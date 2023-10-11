@@ -9,6 +9,8 @@ import { MovieGenreDirective } from './movie-genre.directive';
 export class ServiceCallsDirective extends MovieGenreDirective {
   bannerResult: any = [];
   trendingMovieResult: any = [];
+  trendingTvResult: any = [];
+
   constructor(
     movieService: MovieApiServiceService,
     genreService: MovieApiGenreService
@@ -28,4 +30,13 @@ export class ServiceCallsDirective extends MovieGenreDirective {
       this.trendingMovieResult = data.results;
     });
   }
+
+  trendingTv() {
+    this.movieService.trendingTv().subscribe((data) => {
+      // console.log('trending tv data :D', data);
+      this.trendingTvResult = data.results;
+    });
+  }
+
+
 }

@@ -17,7 +17,7 @@
   color: #ffffff;
 }
 
-.rowposter {
+/* .rowposter {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -43,4 +43,4 @@
 
 .rowposter::-webkit-scrollbar {
   display: none;
-}
+} */

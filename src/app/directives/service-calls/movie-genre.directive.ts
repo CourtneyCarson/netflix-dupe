@@ -82,7 +82,7 @@ export class MovieGenreDirective {
   horrorMovies() {
     this.genreService.getHorrorMovies().subscribe((data) => {
       // console.log('horror movie data :D', data);
-      this.movieGenres.fantasyMovieResult = data.results;
+      this.movieGenres.horrorMovieResult = data.results;
     });
   }
 
