@@ -4,8 +4,6 @@
   <!-- trending movies -->
   <h5 class="text-white">Trending Tv</h5>
   <genre-poster [genres]="trendingTvResult"></genre-poster>
-
- 
   <!-- action -->
   <ng-container *ngIf="tvGenres.actionTvResult?.length > 0">
     <h5 class="text-white">Action Tv</h5>
@@ -46,7 +44,6 @@
     <h5 class="text-white">Fantasy Tv</h5>
     <genre-poster [genres]="tvGenres.fantasyTvResult"></genre-poster>
   </ng-container>
-  
   <!-- scifi -->
   <ng-container *ngIf="tvGenres.scifiTvResult?.length > 0">
     <h5 class="text-white">Sci-Fi Tv</h5>

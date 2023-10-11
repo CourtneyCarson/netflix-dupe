@@ -6,13 +6,10 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'netflix-dupe';
   navbg: any;
 
   // when scrolling nav bar background color stays black
   @HostListener('document:scroll') scrollover() {
-    console.log(document.body.scrollTop, 'scrolllength#');
-
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
       this.navbg = {
         'background-color': '#000000',

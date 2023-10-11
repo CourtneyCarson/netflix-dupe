@@ -26,7 +26,6 @@ export class MovieApiGenreService {
     );
   }
 
-
   // comedy movies
   getComedyMovies(): Observable<any> {
     return this.http.get(
@@ -69,7 +68,6 @@ export class MovieApiGenreService {
     );
   }
 
-
   // sci fi
   getScienceFictionMovies(): Observable<any> {
     return this.http.get(
@@ -109,8 +107,6 @@ export class MovieApiGenreService {
     );
   }
 
-
-
   // get comedy tv
   getComedyTv(): Observable<any> {
     return this.http.get(
@@ -145,14 +141,12 @@ export class MovieApiGenreService {
     );
   }
 
-
   // get mystery tv
   getMysteryTv(): Observable<any> {
     return this.http.get(
       ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}&with_genres=9648`
     );
   }
-
 
   // get sci fi tv
   getScienceFictionTv(): Observable<any> {

@@ -14,13 +14,14 @@ export class MovieApiServiceService {
     );
   }
 
-  // trending movie api data
+  // trending movie 
   trendingMovies(): Observable<any> {
     return this.http.get(
       ` ${enviornment.BASE_URL}/trending/movie/day?api_key=${enviornment.API_KEY}&language=en-US`
     );
   }
 
+  // trending tv
   trendingTv(): Observable<any> {
     return this.http.get(
       ` ${enviornment.BASE_URL}/trending/tv/day?api_key=${enviornment.API_KEY}&language=en-US`
@@ -54,6 +55,4 @@ export class MovieApiServiceService {
       ` ${enviornment.BASE_URL}/movie/${data}/credits?api_key=${enviornment.API_KEY}&language=en-US`
     );
   }
-
-  
 }

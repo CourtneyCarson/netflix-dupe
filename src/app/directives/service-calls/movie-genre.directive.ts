@@ -25,7 +25,6 @@ export class MovieGenreDirective {
   // action movies
   actionMovies() {
     this.genreService.getActionMovies().subscribe((data) => {
-      // console.log('action movie data :D', data);
       this.movieGenres.actionMovieResult = data.results;
     });
   }
@@ -33,16 +32,13 @@ export class MovieGenreDirective {
   // animation movies
   animationMovies() {
     this.genreService.getAnimationMovies().subscribe((data) => {
-      // console.log('animation movie data :D', data);
       this.movieGenres.animationMovieResult = data.results;
     });
   }
 
-
   // comedy movies
   comedyMovies() {
     this.genreService.getComedyMovies().subscribe((data) => {
-      // console.log('comedy movie data :D', data);
       this.movieGenres.comedyMovieResult = data.results;
     });
   }
@@ -50,7 +46,6 @@ export class MovieGenreDirective {
   // drama movies
   dramaMovies() {
     this.genreService.getDramaMovies().subscribe((data) => {
-      // console.log('drama movie data :D', data);
       this.movieGenres.dramaMovieResult = data.results;
     });
   }
@@ -58,7 +53,6 @@ export class MovieGenreDirective {
   // documentary movies
   documentaryMovies() {
     this.genreService.getDocumentaryMovies().subscribe((data) => {
-      // console.log('documentary movie data :D', data);
       this.movieGenres.documentaryMovieResult = data.results;
     });
   }
@@ -66,7 +60,6 @@ export class MovieGenreDirective {
   // fantasy movies
   fantasyMovies() {
     this.genreService.getFantasyMovies().subscribe((data) => {
-      // console.log('fantasy movie data :D', data);
       this.movieGenres.fantasyMovieResult = data.results;
     });
   }
@@ -74,25 +67,20 @@ export class MovieGenreDirective {
   // horror movies
   horrorMovies() {
     this.genreService.getHorrorMovies().subscribe((data) => {
-      // console.log('horror movie data :D', data);
       this.movieGenres.horrorMovieResult = data.results;
     });
   }
 
-
   // mystry movies
   mysteryMovies() {
     this.genreService.getMysteryMovies().subscribe((data) => {
-      // console.log('mystry movie data :D', data);
       this.movieGenres.mystryMovieResult = data.results;
     });
   }
 
-
   // scifi movies
   scifiMovies() {
     this.genreService.getScienceFictionMovies().subscribe((data) => {
-      // console.log('scifi movie data :D', data);
       this.movieGenres.scifiMovieResult = data.results;
     });
   }
@@ -100,7 +88,6 @@ export class MovieGenreDirective {
   // thriller movies
   thrillerMovies() {
     this.genreService.getThrillerMovies().subscribe((data) => {
-      // console.log('thriller movie data :D', data);
       this.movieGenres.thrillerMovieResult = data.results;
     });
   }
@@ -108,7 +95,6 @@ export class MovieGenreDirective {
   // teen drama movies
   teenDramaMovies() {
     this.genreService.getTeenDramaMovies().subscribe((data) => {
-      // console.log('teen drama movie data :D', data);
       this.movieGenres.teenDramaMovieResult = data.results;
     });
   }
@@ -119,7 +105,6 @@ export class MovieGenreDirective {
   // action movies
   actionTv() {
     this.genreService.getActionTv().subscribe((data) => {
-      console.log('action movie data :D', data);
       this.tvGenres.actionTvResult = data.results;
     });
   }
@@ -127,17 +112,13 @@ export class MovieGenreDirective {
   // animation tvs
   animationTv() {
     this.genreService.getAnimationTv().subscribe((data) => {
-      // console.log('animation tv data :D', data);
       this.tvGenres.animationTvResult = data.results;
     });
   }
 
-
-
   // comedy tvs
   comedyTv() {
     this.genreService.getComedyTv().subscribe((data) => {
-      // console.log('comedy tv data :D', data);
       this.tvGenres.comedyTvResult = data.results;
     });
   }
@@ -145,7 +126,6 @@ export class MovieGenreDirective {
   // drama tvs
   dramaTv() {
     this.genreService.getDramaTv().subscribe((data) => {
-      // console.log('drama tv data :D', data);
       this.tvGenres.dramaTvResult = data.results;
     });
   }
@@ -153,7 +133,6 @@ export class MovieGenreDirective {
   // documentary tvs
   documentaryTv() {
     this.genreService.getDocumentaryTv().subscribe((data) => {
-      // console.log('documentary tv data :D', data);
       this.tvGenres.documentaryTvResult = data.results;
     });
   }
@@ -161,7 +140,6 @@ export class MovieGenreDirective {
   // fantasy tvs
   fantasyTv() {
     this.genreService.getFantasyTv().subscribe((data) => {
-      // console.log('fantasy tv data :D', data);
       this.tvGenres.fantasyTvResult = data.results;
     });
   }
@@ -169,27 +147,20 @@ export class MovieGenreDirective {
   // horror tvs
   horrorTv() {
     this.genreService.getHorrorTv().subscribe((data) => {
-      // console.log('horror tv data :D', data);
       this.tvGenres.horrorTvResult = data.results;
     });
   }
 
-
-
   // mystry tvs
   mysteryTv() {
     this.genreService.getMysteryTv().subscribe((data) => {
-      // console.log('mystry tv data :D', data);
       this.tvGenres.mystryTvResult = data.results;
     });
   }
 
- 
-
   // scifi tvs
   scifiTv() {
     this.genreService.getScienceFictionTv().subscribe((data) => {
-      // console.log('scifi tv data :D', data);
       this.tvGenres.scifiTvResult = data.results;
     });
   }
@@ -197,7 +168,6 @@ export class MovieGenreDirective {
   // thriller tvs
   thrillerTv() {
     this.genreService.getThrillerTv().subscribe((data) => {
-      // console.log('thriller tv data :D', data);
       this.tvGenres.thrillerTvResult = data.results;
     });
   }
@@ -205,7 +175,6 @@ export class MovieGenreDirective {
   // teen drama tvs
   teenDramaTv() {
     this.genreService.getTeenDramaTv().subscribe((data) => {
-      // console.log('teen drama tv data :D', data);
       this.tvGenres.teenDramaTvResult = data.results;
     });
   }
