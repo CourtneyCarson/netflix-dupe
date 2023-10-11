@@ -13,6 +13,9 @@ import { ServiceCallsDirective } from './directives/service-calls/service-calls.
 import { MovieApiGenreService } from './service/movie-api-genre.service';
 import { MovieApiServiceService } from './service/movie-api-service.service';
 import { GenrePosterComponent } from './components/genre-poster/genre-poster.component';
+import { MoviesComponent } from './pages/movies/movies.component';
+import { TvComponent } from './pages/tv/tv.component';
+import { BannerCarouselComponent } from './components/banner-carousel/banner-carousel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +25,9 @@ import { GenrePosterComponent } from './components/genre-poster/genre-poster.com
     ServiceCallsDirective,
     MovieGenreDirective,
     GenrePosterComponent,
+    MoviesComponent,
+    TvComponent,
+    BannerCarouselComponent,
   ],
   imports: [
     BrowserModule,

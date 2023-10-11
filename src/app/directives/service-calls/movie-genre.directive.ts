@@ -1,4 +1,4 @@
-import { Directive, Input } from '@angular/core';
+import { Directive } from '@angular/core';
 import {
   MovieGenres,
   TvGenres,
@@ -26,7 +26,7 @@ export class MovieGenreDirective {
   actionMovies() {
     this.genreService.getActionMovies().subscribe((data) => {
       // console.log('action movie data :D', data);
-      this.movieGenres.actionMovieResult = data.results
+      this.movieGenres.actionMovieResult = data.results;
     });
   }
 
@@ -131,6 +131,121 @@ export class MovieGenreDirective {
     this.genreService.getTeenDramaMovies().subscribe((data) => {
       // console.log('teen drama movie data :D', data);
       this.movieGenres.teenDramaMovieResult = data.results;
+    });
+  }
+  /*
+   *TV Genres
+   */
+
+  // action movies
+  actionTv() {
+    this.genreService.getActionTv().subscribe((data) => {
+      console.log('action movie data :D', data);
+      this.tvGenres.actionTvResult = data.results;
+    });
+  }
+
+  // animation tvs
+  animationTv() {
+    this.genreService.getAnimationTv().subscribe((data) => {
+      // console.log('animation tv data :D', data);
+      this.tvGenres.animationTvResult = data.results;
+    });
+  }
+
+  // bollywood tvs
+  bollywoodTv() {
+    this.genreService.getBollywoodTv().subscribe((data) => {
+      // console.log('bollywood tv data :D', data);
+      this.tvGenres.bollywoodTvResult = data.results;
+    });
+  }
+
+  // comedy tvs
+  comedyTv() {
+    this.genreService.getComedyTv().subscribe((data) => {
+      // console.log('comedy tv data :D', data);
+      this.tvGenres.comedyTvResult = data.results;
+    });
+  }
+
+  // drama tvs
+  dramaTv() {
+    this.genreService.getDramaTv().subscribe((data) => {
+      // console.log('drama tv data :D', data);
+      this.tvGenres.dramaTvResult = data.results;
+    });
+  }
+
+  // documentary tvs
+  documentaryTv() {
+    this.genreService.getDocumentaryTv().subscribe((data) => {
+      // console.log('documentary tv data :D', data);
+      this.tvGenres.documentaryTvResult = data.results;
+    });
+  }
+
+  // fantasy tvs
+  fantasyTv() {
+    this.genreService.getFantasyTv().subscribe((data) => {
+      // console.log('fantasy tv data :D', data);
+      this.tvGenres.fantasyTvResult = data.results;
+    });
+  }
+
+  // horror tvs
+  horrorTv() {
+    this.genreService.getHorrorTv().subscribe((data) => {
+      // console.log('horror tv data :D', data);
+      this.tvGenres.horrorTvResult = data.results;
+    });
+  }
+
+  // international tvs
+  internationalTv() {
+    this.genreService.getInternationalTv().subscribe((data) => {
+      // console.log('international tv data :D', data);
+      this.tvGenres.internationalTvResult = data.results;
+    });
+  }
+
+  // mystry tvs
+  mysteryTv() {
+    this.genreService.getMysteryTv().subscribe((data) => {
+      // console.log('mystry tv data :D', data);
+      this.tvGenres.mystryTvResult = data.results;
+    });
+  }
+
+  // romance tvs
+  romanceTv() {
+    this.genreService.getRomanceTv().subscribe((data) => {
+      console.log('romance tv data :D', data);
+      this.tvGenres.romanceTvResult = data.results;
+    });
+  }
+
+  // scifi tvs
+  scifiTv() {
+    this.genreService.getScienceFictionTv().subscribe((data) => {
+      // console.log('scifi tv data :D', data);
+      this.tvGenres.scifiTvResult = data.results;
+    });
+  }
+
+  // thriller tvs
+  thrillerTv() {
+    this.genreService.getThrillerTv().subscribe((data) => {
+      // console.log('thriller tv data :D', data);
+      this.tvGenres.thrillerTvResult = data.results;
+    });
+  }
+
+  // teen drama tvs
+  teenDramaTv() {
+    this.genreService.getTeenDramaTv().subscribe((data) => {
+      // console.log('teen drama tv data :D', data);
+      this.tvGenres.teenDramaTvResult = data.results;
     });
   }
 }

@@ -182,6 +182,13 @@ export class MovieApiGenreService {
     );
   }
 
+  // get romance tv
+  getRomanceTv(): Observable<any> {
+    return this.http.get(
+      ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}`
+    );
+  }
+
   // get sci fi tv
   getScienceFictionTv(): Observable<any> {
     return this.http.get(

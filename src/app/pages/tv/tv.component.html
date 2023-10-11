@@ -1,0 +1,78 @@
+<banner-carousel [banner]="trendingTvResult"></banner-carousel>
+
+<div class="contain mt-3 p-4">
+  <!-- trending movies -->
+  <h5 class="text-white">Trending Tv</h5>
+  <genre-poster [genres]="trendingTvResult"></genre-poster>
+
+  <!-- romance -->
+  <ng-container *ngIf="tvGenres.romanceTvResult?.length > 0">
+    <h5 class="text-white">Romance Tv</h5>
+    <genre-poster [genres]="tvGenres.romanceTvResult"></genre-poster>
+  </ng-container>
+  <!-- action -->
+  <ng-container *ngIf="tvGenres.actionTvResult?.length > 0">
+    <h5 class="text-white">Action Tv</h5>
+    <genre-poster [genres]="tvGenres.actionTvResult?.length > 0"></genre-poster
+  ></ng-container>
+  <!-- comedy -->
+  <ng-container *ngIf="tvGenres.comedyTvResult?.length > 0">
+    <h5 class="text-white">Comedy Tv</h5>
+    <genre-poster [genres]="tvGenres.comedyTvResult"></genre-poster>
+  </ng-container>
+  <!-- horror -->
+  <ng-container *ngIf="tvGenres.horrorTvResult?.length > 0">
+    <h5 class="text-white">Horror Tv</h5>
+    <genre-poster [genres]="tvGenres.horrorTvResult"></genre-poster>
+  </ng-container>
+  <!-- drama -->
+  <ng-container *ngIf="tvGenres.dramaTvResult?.length > 0">
+    <h5 class="text-white">Drama Tv</h5>
+    <genre-poster [genres]="tvGenres.dramaTvResult"></genre-poster>
+  </ng-container>
+  <!-- thriller -->
+  <ng-container *ngIf="tvGenres.thrillerTvResult?.length > 0">
+    <h5 class="text-white">Thriller Tv</h5>
+    <genre-poster [genres]="tvGenres.thrillerTvResult"></genre-poster>
+  </ng-container>
+  <!-- documentary -->
+  <ng-container *ngIf="tvGenres.documentaryTvResult?.length > 0">
+    <h5 class="text-white">Documentary Tv</h5>
+    <genre-poster [genres]="tvGenres.documentaryTvResult"></genre-poster>
+  </ng-container>
+  <!-- animation -->
+  <ng-container *ngIf="tvGenres.animationTvResult?.length > 0">
+    <h5 class="text-white">Animation Tv</h5>
+    <genre-poster [genres]="tvGenres.animationTvResult"></genre-poster>
+  </ng-container>
+  <!-- fantasy -->
+  <ng-container *ngIf="tvGenres.fantasyTvResult?.length > 0">
+    <h5 class="text-white">Fantasy Tv</h5>
+    <genre-poster [genres]="tvGenres.fantasyTvResult"></genre-poster>
+  </ng-container>
+  <!-- international -->
+  <ng-container *ngIf="tvGenres.internationalTvResult?.length > 0">
+    <h5 class="text-white">International Tv</h5>
+    <genre-poster [genres]="tvGenres.internationalTvResult"></genre-poster>
+  </ng-container>
+  <!-- bollywood -->
+  <ng-container *ngIf="tvGenres.bollywoodTvResult?.length > 0">
+    <h5 class="text-white">bollywood Tv</h5>
+    <genre-poster [genres]="tvGenres.bollywoodTvResult"></genre-poster>
+  </ng-container>
+  <!-- scifi -->
+  <ng-container *ngIf="tvGenres.scifiTvResult?.length > 0">
+    <h5 class="text-white">Sci-Fi Tv</h5>
+    <genre-poster [genres]="tvGenres.scifiTvResult"></genre-poster>
+  </ng-container>
+  <!-- mystery -->
+  <ng-container *ngIf="tvGenres.mystryTvResult?.length > 0">
+    <h5 class="text-white">Mystery Tv</h5>
+    <genre-poster [genres]="tvGenres.mystryTvResult"></genre-poster>
+  </ng-container>
+  <!-- teen drama -->
+  <ng-container *ngIf="tvGenres.teenDramaTvResult?.length > 0">
+    <h5 class="text-white">Teen Drama Tv</h5>
+    <genre-poster [genres]="tvGenres.teenDramaTvResult"></genre-poster>
+  </ng-container>
+</div>

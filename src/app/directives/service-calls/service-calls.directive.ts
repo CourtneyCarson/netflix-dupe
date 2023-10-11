@@ -1,4 +1,4 @@
-import { Directive } from '@angular/core';
+import { Directive, Input } from '@angular/core';
 import { MovieApiGenreService } from 'src/app/service/movie-api-genre.service';
 import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
 import { MovieGenreDirective } from './movie-genre.directive';
