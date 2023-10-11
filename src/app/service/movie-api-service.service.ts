@@ -30,4 +30,29 @@ export class MovieApiServiceService {
       ` ${this.BASE_URL}/search/movie?api_key=${this.API_KEY}&language=en-US&query=${data.movieName}`
     );
   }
+
+  // movie details
+  movieDetails(id: any): Observable<any> {
+    return this.http.get(
+      ` ${this.BASE_URL}/movie/${id}?api_key=${this.API_KEY}&language=en-US`
+    );
+  }
+
+  // get movie video 
+  getMovieVideo(data: any) : Observable<any> {
+    return this.http.get(
+      ` ${this.BASE_URL}/movie/${data}/videos?api_key=${this.API_KEY}&language=en-US`
+    );
+  }
+// get cast 
+  getMovieCast(data: any) : Observable<any> {
+    return this.http.get(
+      ` ${this.BASE_URL}/movie/${data}/credits?api_key=${this.API_KEY}&language=en-US`
+    );
+  
+  }
+
+
+
+
 }
