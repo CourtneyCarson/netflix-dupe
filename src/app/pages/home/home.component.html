@@ -5,17 +5,18 @@
       <div
         class="carousel-item active"
         data-bs-interval="10000"
-        *ngFor="let movie of bannerResult; let i = index"
+        *ngFor="let item of bannerResult; let i = index"
         [ngClass]="{ active: i === 1 }"
       >
         <img
-          src="https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}"
+          src="https://image.tmdb.org/t/p/original/{{ item.backdrop_path }}"
           class="d-block w-100"
           alt="..."
+          routerLink="/movie/{{ item.id }}"
         />
         <div class="carousel-caption d-none d-md-block">
-          <h2>{{ movie.original_title }}</h2>
-          <p>{{ movie.overview }}</p>
+          <h2>{{ item.original_title }}</h2>
+          <p>{{ item.overview }}</p>
         </div>
       </div>
     </div>
@@ -51,6 +52,7 @@
       src="https://image.tmdb.org/t/p/original/{{ item.poster_path }}"
       class="rowimg largeposter "
       alt="..."
+      routerLink="/movie/{{ item.id }}"
     />
   </ng-container>
     </div>

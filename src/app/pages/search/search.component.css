@@ -1,0 +1,18 @@
+.btn {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #e50914;
+  color: #ffffff;
+  transition: transform 450ms;
+}
+
+img {
+  width: 100%;
+}
+
+h5 {
+  color: #ffffff; 
+}
