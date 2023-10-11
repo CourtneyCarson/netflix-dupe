@@ -1,14 +1,15 @@
 <div class="contain mt-5">
   <div class="row p-5">
+    <!-- poster image -->
     <div class="col-lg-2" *ngIf="getMovieDetailResult.poster_path">
       <img
         src="https://image.tmdb.org/t/p/original/{{
           getMovieDetailResult.poster_path
         }}"
-        alt=""
       />
     </div>
     <div class="col-lg-10 mt-5 p-4">
+      <!-- movie details -->
       <h1 class="my-2">{{ getMovieDetailResult.original_title }}</h1>
       <p class="my-3">{{ getMovieDetailResult.overview }}</p>
       <a
@@ -19,6 +20,28 @@
         target="_blank"
         >watch trailer
       </a>
+
+      <!-- cast -->
+      <div class="mt-4 p-4">
+        <h2 class="text-white">Top Cast</h2>
+        <div class="row">
+          <div class="col-lg-4" *ngFor="let item of getMovieCastResult">
+            <div class="row">
+              <div class="col-lg-2">
+                <img
+                  src="https://image.tmdb.org/t/p/original/{{
+                    item.profile_path
+                  }}"
+                />
+              </div>
+              <div class="col-lg-10">
+                <h3 class="text-white">{{ item.original_name }}</h3>
+                <p>{{ item.character }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
