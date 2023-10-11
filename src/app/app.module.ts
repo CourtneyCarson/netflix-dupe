@@ -8,10 +8,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MovieDetailsComponent } from './pages/movie-details/movie-details.component';
 import { SearchComponent } from './pages/search/search.component';
-import { MovieGenreDirective } from './pages/service-calls/movie-genre.directive';
-import { ServiceCallsDirective } from './pages/service-calls/service-calls.directive';
+import { MovieGenreDirective } from './directives/service-calls/movie-genre.directive';
+import { ServiceCallsDirective } from './directives/service-calls/service-calls.directive';
 import { MovieApiGenreService } from './service/movie-api-genre.service';
 import { MovieApiServiceService } from './service/movie-api-service.service';
+import { GenrePosterComponent } from './components/genre-poster/genre-poster.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { MovieApiServiceService } from './service/movie-api-service.service';
     MovieDetailsComponent,
     ServiceCallsDirective,
     MovieGenreDirective,
+    GenrePosterComponent,
   ],
   imports: [
     BrowserModule,

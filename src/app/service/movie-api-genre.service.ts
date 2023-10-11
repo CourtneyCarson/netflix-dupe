@@ -81,6 +81,13 @@ export class MovieApiGenreService {
     );
   }
 
+  // romance
+  getRomanceMovies(): Observable<any> {
+    return this.http.get(
+      ` ${enviornment.BASE_URL}/discover/movie?api_key=${enviornment.API_KEY}`
+    );
+  }
+
   // sci fi
   getScienceFictionMovies(): Observable<any> {
     return this.http.get(
@@ -179,6 +186,20 @@ export class MovieApiGenreService {
   getScienceFictionTv(): Observable<any> {
     return this.http.get(
       ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}&with_genres=878`
+    );
+  }
+
+  // get teen drama tv
+  getTeenDramaTv(): Observable<any> {
+    return this.http.get(
+      ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}&with_genres=10751`
+    );
+  }
+
+  // get thriller tv
+  getThrillerTv(): Observable<any> {
+    return this.http.get(
+      ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}&with_genres=53`
     );
   }
 }
