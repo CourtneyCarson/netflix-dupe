@@ -5,16 +5,12 @@
   <h5 class="text-white">Trending Movie</h5>
   <genre-poster [genres]="trendingMovieResult"></genre-poster>
 
-  <!-- romance -->
-  <ng-container *ngIf="movieGenres.romanceMovieResult?.length > 0">
-    <h5 class="text-white">Romance Movie</h5>
-    <genre-poster [genres]="movieGenres.romanceMovieResult"></genre-poster>
-  </ng-container>
+  
   <!-- action -->
   <ng-container *ngIf="movieGenres.actionMovieResult?.length > 0">
     <h5 class="text-white">Action Movie</h5>
-    <genre-poster [genres]="movieGenres.actionMovieResult?.length > 0"></genre-poster
-  ></ng-container>
+    <genre-poster [genres]="movieGenres.actionMovieResult"></genre-poster>
+  </ng-container>
   <!-- comedy -->
   <ng-container *ngIf="movieGenres.comedyMovieResult?.length > 0">
     <h5 class="text-white">Comedy Movie</h5>
@@ -50,16 +46,9 @@
     <h5 class="text-white">Fantasy Movie</h5>
     <genre-poster [genres]="movieGenres.fantasyMovieResult"></genre-poster>
   </ng-container>
-  <!-- international -->
-  <ng-container *ngIf="movieGenres.internationalMovieResult?.length > 0">
-    <h5 class="text-white">International Movie</h5>
-    <genre-poster [genres]="movieGenres.internationalMovieResult"></genre-poster>
-  </ng-container>
-  <!-- bollywood -->
-  <ng-container *ngIf="movieGenres.bollywoodMovieResult?.length > 0">
-    <h5 class="text-white">bollywood Movie</h5>
-    <genre-poster [genres]="movieGenres.bollywoodMovieResult"></genre-poster>
-  </ng-container>
+
+
+
   <!-- scifi -->
   <ng-container *ngIf="movieGenres.scifiMovieResult?.length > 0">
     <h5 class="text-white">Sci-Fi Movie</h5>

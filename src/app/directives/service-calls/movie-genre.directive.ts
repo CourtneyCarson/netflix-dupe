@@ -38,13 +38,6 @@ export class MovieGenreDirective {
     });
   }
 
-  // bollywood movies
-  bollywoodMovies() {
-    this.genreService.getBollywoodMovies().subscribe((data) => {
-      // console.log('bollywood movie data :D', data);
-      this.movieGenres.bollywoodMovieResult = data.results;
-    });
-  }
 
   // comedy movies
   comedyMovies() {
@@ -86,13 +79,6 @@ export class MovieGenreDirective {
     });
   }
 
-  // international movies
-  internationalMovies() {
-    this.genreService.getInternationalMovies().subscribe((data) => {
-      // console.log('international movie data :D', data);
-      this.movieGenres.internationalMovieResult = data.results;
-    });
-  }
 
   // mystry movies
   mysteryMovies() {
@@ -102,13 +88,6 @@ export class MovieGenreDirective {
     });
   }
 
-  // romance movies
-  romanceMovies() {
-    this.genreService.getRomanceMovies().subscribe((data) => {
-      console.log('romance movie data :D', data);
-      this.movieGenres.romanceMovieResult = data.results;
-    });
-  }
 
   // scifi movies
   scifiMovies() {
@@ -153,13 +132,7 @@ export class MovieGenreDirective {
     });
   }
 
-  // bollywood tvs
-  bollywoodTv() {
-    this.genreService.getBollywoodTv().subscribe((data) => {
-      // console.log('bollywood tv data :D', data);
-      this.tvGenres.bollywoodTvResult = data.results;
-    });
-  }
+
 
   // comedy tvs
   comedyTv() {
@@ -201,13 +174,7 @@ export class MovieGenreDirective {
     });
   }
 
-  // international tvs
-  internationalTv() {
-    this.genreService.getInternationalTv().subscribe((data) => {
-      // console.log('international tv data :D', data);
-      this.tvGenres.internationalTvResult = data.results;
-    });
-  }
+
 
   // mystry tvs
   mysteryTv() {
@@ -217,13 +184,7 @@ export class MovieGenreDirective {
     });
   }
 
-  // romance tvs
-  romanceTv() {
-    this.genreService.getRomanceTv().subscribe((data) => {
-      console.log('romance tv data :D', data);
-      this.tvGenres.romanceTvResult = data.results;
-    });
-  }
+ 
 
   // scifi tvs
   scifiTv() {

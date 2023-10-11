@@ -5,11 +5,7 @@
   <h5 class="text-white">Trending Tv</h5>
   <genre-poster [genres]="trendingTvResult"></genre-poster>
 
-  <!-- romance -->
-  <ng-container *ngIf="tvGenres.romanceTvResult?.length > 0">
-    <h5 class="text-white">Romance Tv</h5>
-    <genre-poster [genres]="tvGenres.romanceTvResult"></genre-poster>
-  </ng-container>
+ 
   <!-- action -->
   <ng-container *ngIf="tvGenres.actionTvResult?.length > 0">
     <h5 class="text-white">Action Tv</h5>
@@ -50,16 +46,7 @@
     <h5 class="text-white">Fantasy Tv</h5>
     <genre-poster [genres]="tvGenres.fantasyTvResult"></genre-poster>
   </ng-container>
-  <!-- international -->
-  <ng-container *ngIf="tvGenres.internationalTvResult?.length > 0">
-    <h5 class="text-white">International Tv</h5>
-    <genre-poster [genres]="tvGenres.internationalTvResult"></genre-poster>
-  </ng-container>
-  <!-- bollywood -->
-  <ng-container *ngIf="tvGenres.bollywoodTvResult?.length > 0">
-    <h5 class="text-white">bollywood Tv</h5>
-    <genre-poster [genres]="tvGenres.bollywoodTvResult"></genre-poster>
-  </ng-container>
+  
   <!-- scifi -->
   <ng-container *ngIf="tvGenres.scifiTvResult?.length > 0">
     <h5 class="text-white">Sci-Fi Tv</h5>

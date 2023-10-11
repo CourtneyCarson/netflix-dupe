@@ -21,15 +21,12 @@ export class MoviesComponent extends ServiceCallsDirective implements OnInit {
     // movie genres
     this.actionMovies();
     this.animationMovies();
-    this.bollywoodMovies();
     this.comedyMovies();
     this.dramaMovies();
     this.documentaryMovies();
     this.fantasyMovies();
     this.horrorMovies();
-    this.internationalMovies();
     this.mysteryMovies();
-    this.romanceMovies();
     this.scifiMovies();
     this.thrillerMovies();
     this.teenDramaMovies();

@@ -21,15 +21,12 @@ export class TvComponent extends ServiceCallsDirective implements OnInit {
     this.trendingTv();
     this.actionTv();
     this.animationTv();
-    this.bollywoodTv();
     this.comedyTv();
     this.dramaTv();
     this.documentaryTv();
     this.fantasyTv();
     this.horrorTv();
-    this.internationalTv();
     this.mysteryTv();
-    this.romanceTv();
     this.scifiTv();
     this.thrillerTv();
     this.teenDramaTv();

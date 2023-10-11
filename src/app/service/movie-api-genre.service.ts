@@ -26,12 +26,6 @@ export class MovieApiGenreService {
     );
   }
 
-  // bollywood
-  getBollywoodMovies(): Observable<any> {
-    return this.http.get(
-      ` ${enviornment.BASE_URL}/discover/movie?api_key=${enviornment.API_KEY}&language=hi`
-    );
-  }
 
   // comedy movies
   getComedyMovies(): Observable<any> {
@@ -68,12 +62,6 @@ export class MovieApiGenreService {
     );
   }
 
-  // get international movies
-  getInternationalMovies(): Observable<any> {
-    return this.http.get(
-      ` ${enviornment.BASE_URL}/discover/movie?api_key=${enviornment.API_KEY}&language=en-US`
-    );
-  }
   // mystery
   getMysteryMovies(): Observable<any> {
     return this.http.get(
@@ -81,12 +69,6 @@ export class MovieApiGenreService {
     );
   }
 
-  // romance
-  getRomanceMovies(): Observable<any> {
-    return this.http.get(
-      ` ${enviornment.BASE_URL}/discover/movie?api_key=${enviornment.API_KEY}`
-    );
-  }
 
   // sci fi
   getScienceFictionMovies(): Observable<any> {
@@ -127,12 +109,7 @@ export class MovieApiGenreService {
     );
   }
 
-  // get bollywood tv
-  getBollywoodTv(): Observable<any> {
-    return this.http.get(
-      ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}&language=hi`
-    );
-  }
+
 
   // get comedy tv
   getComedyTv(): Observable<any> {
@@ -168,12 +145,6 @@ export class MovieApiGenreService {
     );
   }
 
-  // international tv
-  getInternationalTv(): Observable<any> {
-    return this.http.get(
-      ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}&language=en-US`
-    );
-  }
 
   // get mystery tv
   getMysteryTv(): Observable<any> {
@@ -182,12 +153,6 @@ export class MovieApiGenreService {
     );
   }
 
-  // get romance tv
-  getRomanceTv(): Observable<any> {
-    return this.http.get(
-      ` ${enviornment.BASE_URL}/discover/tv?api_key=${enviornment.API_KEY}`
-    );
-  }
 
   // get sci fi tv
   getScienceFictionTv(): Observable<any> {
