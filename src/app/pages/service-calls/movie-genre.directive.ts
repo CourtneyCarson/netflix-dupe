@@ -1,11 +1,10 @@
 import { Directive } from '@angular/core';
-import { MovieApiGenreService } from 'src/app/service/movie-api-genre.service';
-import { ServiceCallsDirective } from './service-calls.directive';
-import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
 import {
   MovieGenres,
   TvGenres,
 } from 'src/app/service/interfaces/genres.interface';
+import { MovieApiGenreService } from 'src/app/service/movie-api-genre.service';
+import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
 
 @Directive({
   selector: '[appMovieGenre]',
@@ -134,8 +133,4 @@ export class MovieGenreDirective {
       this.movieGenres.teenDramaMovieResult = data.results;
     });
   }
-
-
-
-
 }
